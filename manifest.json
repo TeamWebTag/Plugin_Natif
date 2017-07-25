@@ -10,19 +10,19 @@
     "https://*/*"
   ],
     "web_accessible_resources": [
-    "img/lol.png",
-    "img/trash.png",
+    "images/lol.png",
+    "images/trash.png",
     "fabric.js/dist/fabric.js"  
   ],
   "browser_action" : {
-    "default_icon" : "img/logo.png",
+    "default_icon" : "images/logo.png",
     "default_popup" : "popup.html"
   },
   "icons" : {
-    "256" : "img/logo.png"
+    "256" : "images/logo.png"
   },
    "content_scripts" : [{
     "matches": ["http://*/*", "https://*/*"],
-    "js": ["./js/tag_the_web.js"]
+    "js": ["./scripts/tag_the_web.js"]
   }]
 }
